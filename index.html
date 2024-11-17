@@ -3,7 +3,7 @@
 <html class="no-js" lang="en" dir="ltr">
 <head>
 <meta charset="utf-8">
-<title>Assignment 2</title>
+<title>Batman: The Dark Knight and Related Content</title>
 <meta content="width=device-width, initial-scale=1" name="viewport">
 
 
@@ -358,7 +358,7 @@
 </section>
 
 <p>
-<button onclick="myFunction()">More super heros</button>
+<button id="moreHeroBtn" onclick="myFunction()">More super heros</button>
 
 <div id="myDIV" style="display:none; background-color: lightblue;">
   <p>Nutrition facts</p>
@@ -400,12 +400,12 @@
 <script>
 function myFunction() {
   var x = document.getElementById("myDIV");
+  var button = document.getElementById("moreHeroBtn");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
     x.style.display = "none";
   }
-    document.activeElement.blur();
 }
 </script>
 </body>
